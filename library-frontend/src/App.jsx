@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 // Import our Lego Pieces
 import Navbar from './components/Navbar';
@@ -12,7 +12,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       {/* Putting the Navbar outside the Routes means it stays on top all the time! */}
       <Navbar />
       
@@ -42,7 +42,7 @@ function App() {
           />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
