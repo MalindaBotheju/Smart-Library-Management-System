@@ -8,9 +8,14 @@ const cron = require('node-cron'); // <-- 1. IMPORT NODE-CRON HERE
 const app = express();
 
 // --- MIDDLEWARE ---
-// The "Nuclear Option": This lets ANY website talk to your backend.
 app.use(cors({
-  origin: "*"
+  origin: [
+    'https://smart-library-management-system-sable.vercel.app', // Your Vercel frontend
+    'http://localhost:5173' // Your local React frontend (just in case)
+  ],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 app.use(express.json());
