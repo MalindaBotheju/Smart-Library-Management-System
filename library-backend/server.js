@@ -8,15 +8,11 @@ const cron = require('node-cron'); // <-- 1. IMPORT NODE-CRON HERE
 const app = express();
 
 // --- MIDDLEWARE ---
-// This opens the bridge so your React app (Port 5173) can talk to this Backend (Port 5000)
+// The "Nuclear Option": This lets ANY website talk to your backend.
 app.use(cors({
-  origin: [
-    'http://localhost:5173', // Keeps it working on your local computer
-    'https://smart-library-management-system-aw00dibs5.vercel.app', 
-    'https://smart-library-management-system-sable.vercel.app' // <-- ADDED YOUR ACTIVE URL HERE
-  ],
-  credentials: true
+  origin: "*"
 }));
+
 app.use(express.json());
 
 // --- ROUTES ---
