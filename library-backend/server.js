@@ -9,7 +9,13 @@ const app = express();
 
 // --- MIDDLEWARE ---
 // This opens the bridge so your React app (Port 5173) can talk to this Backend (Port 5000)
-app.use(cors()); 
+app.use(cors({
+  origin: [
+    'http://localhost:5173', // Keeps it working on your local computer
+    'https://smart-library-management-system-aw00dibs5.vercel.app' // Allows your live Vercel app
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 // --- ROUTES ---

@@ -15,7 +15,7 @@ export default function BookCard({ book }) {
 
     try {
       // Send the request to your backend loans table
-      await axios.post('http://localhost:5000/api/loans/reserve', {
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/loans/reserve`, {
         user_id: user.id,
         book_id: book.id
       });

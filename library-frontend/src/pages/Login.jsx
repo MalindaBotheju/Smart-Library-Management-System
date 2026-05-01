@@ -17,7 +17,7 @@ export default function Login() {
     const payload = isRegistering ? { name, email, password } : { email, password };
 
     try {
-      const response = await axios.post(`http://localhost:5000/api/auth/${endpoint}`, payload);
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/auth/${endpoint}`, payload);
       
       // Save the token and user info to the browser's memory
       localStorage.setItem('token', response.data.token);

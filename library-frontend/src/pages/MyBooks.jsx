@@ -20,7 +20,7 @@ export default function MyBooks() {
   const fetchMyLoans = async (userId) => {
     try {
       // 2. Fetch only the loans belonging to this user
-      const response = await axios.get(`http://localhost:5000/api/loans/user/${userId}`);
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/loans/user/${userId}`);
       setMyLoans(response.data);
     } catch (err) {
       console.error("Error fetching my loans", err);
