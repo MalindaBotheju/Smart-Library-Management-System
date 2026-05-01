@@ -12,7 +12,8 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:5173', // Keeps it working on your local computer
-    'https://smart-library-management-system-aw00dibs5.vercel.app' // Allows your live Vercel app
+    'https://smart-library-management-system-aw00dibs5.vercel.app', 
+    'https://smart-library-management-system-sable.vercel.app' // <-- ADDED YOUR ACTIVE URL HERE
   ],
   credentials: true
 }));
