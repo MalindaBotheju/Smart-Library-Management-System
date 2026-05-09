@@ -33,20 +33,20 @@ The system is secured by Role-Based Access Control (RBAC).
 * **Unauthenticated Access:** Random visitors see a public catalog and are forced to a login screen if they attempt any restricted action (Protected Routes logic).
 <p align="center">
   <img src="./screenshots/login_page.png" width="48%" alt="Login Page">
-  <br>*(Standard Secure Login Screen)*
+  <br>Standard Secure Login Screen
 </p>
 
 * **Member View:** Logged-in members can search and filter the catalog.
 <p align="center">
   <img src="./screenshots/member_home_page.png" width="48%" alt="Member Home Page">
-  <br>*(Member view - browse and search, no 'Lend' button)*
+  <br>Member view - browse and search, no 'Lend' button
 </p>
 
 * **Librarian/Admin View:** Authorized librarians have an unlocked "Librarian Dashboard" with full system management tools.
 
 <p align="center">
   <img src="./screenshots/admin_home_page.png" width="48%" alt="Admin Home Page">
-  <br>*(Admin View showing the critical 'Lend Book' button on available titles)*
+  <br>Admin View showing the critical 'Lend Book' button on available titles
 </p>
 
 ### 2. Librarian Dashboard (Admin Features)
@@ -55,12 +55,12 @@ When authorized, the Librarian Dashboard unlocks specialized operations: process
 <p align="center">
   <img src="./screenshots/add_book_page.png" width="48%" alt="Add Book Page">
   <img src="./screenshots/manage_book_page.png" width="48%" alt="Manage Book Page">
-  <br>*(Left: Form to inject new titles | Right: Full Inventory management console)*
+  <br>Left: Form to inject new titles | Right: Full Inventory management console
 </p>
 
 <p align="center">
   <img src="./screenshots/edit_book_page.png" width="48%" alt="Edit Book Page">
-  <br>*(Form to update existing book details)*
+  <br>Form to update existing book details
 </p>
 
 ### 3. Automated Fine System & Borrow History
@@ -69,7 +69,7 @@ This is the system's core business logic. The `BorrowHistory` module tracks who 
 
 <p align="center">
   <img src="./screenshots/borroe_history_page.png" width="48%" alt="Borrow History Page">
-  <br>*(Borrow History Table showing dynamic 'Fine' calculation for returned items and 'Borrowed' status for active loans)*
+  <br>Borrow History Table showing dynamic 'Fine' calculation for returned items and 'Borrowed' status for active loans
 </p>
 
 ### 4. Advanced Search, Filtering, & Pagination
@@ -81,7 +81,7 @@ You implemented a seamless user experience on the frontend:
 
 <p align="center">
   <img src="./screenshots/home_page.png" width="48%" alt="Home Page">
-  <br>*(Inventory view demonstrating custom pagination controls - page 2 view)*
+  <br>Inventory view demonstrating custom pagination controls - page 2 view
 </p>
 
 ---
@@ -156,7 +156,5 @@ The application uses three core interconnected Mongoose models/collections:
 * **Users Model:** Stores login credentials, secured hashed passwords, and user role (`admin` or `member`).
 * **Books Model:** Stores metadata (Title, Author, Genre, ISBN) and manages the crucial dynamic `availableCopies` count.
 * **Transactions Model:** Acts as the main transactional database, linking borrowers to specific books and recording issue dates, due dates, return dates, and late fine amounts.
-
-```
 
 ```
