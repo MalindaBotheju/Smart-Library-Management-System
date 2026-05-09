@@ -122,33 +122,22 @@ If you wish to run this project locally, follow these steps:
    ```bash
    npm install
    ```
-
-
-* Create a `.env` file in the `backend` folder and add your variables (see `backend/server.js` for required variables):
-```env
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-
-```
-
-
-* Start the backend server: `npm start`
+   * Create a `.env` file in the `backend` folder and add your variables (see `backend/server.js` for required variables):
+   ```env
+   PORT=5000
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_secret_key
+   ```
+   * Start the backend server: `npm start`
 
 
 3. **Setup the Frontend:**
-```bash
-cd ../frontend
-npm install
-
-```
-
-
-* Start the Vite development server: `npm run dev`
-* *Note: Ensure your frontend API calls are pointing to `http://localhost:5000` for local testing.*
-
-
-
+   ```bash
+   cd ../frontend
+   npm install
+   ```
+   * Start the Vite development server: `npm run dev`
+   * * *Note: Ensure your frontend API calls are pointing to `http://localhost:5000` for local testing.*
 ---
 
 ## 🧠 Database Architecture
