@@ -11,8 +11,11 @@ A full-stack, cloud-deployed Library Management System built with the MERN stack
 
 The backend service is currently live and successfully communicating with the MongoDB cluster. The CI/CD pipelines are active for both frontend (Vercel) and backend (Render), ensuring automatic deployment of new commits.
 
-![image_4.png](./screenshots/healthy_logs.png) *(Healthy production server logs)*
-![image_8.png](./screenshots/vercel_dashboard.png) *(Vercel success status)*
+<img src="./screenshots/healthy_logs.png" width="700" alt="Healthy logs">
+<br>*(Healthy production server logs)*
+
+<img src="./screenshots/vercel_dashboard.png" width="700" alt="Vercel Dashboard">
+<br>*(Vercel success status)*
 
 ---
 
@@ -27,30 +30,37 @@ The system is secured by Role-Based Access Control (RBAC).
 * **Member View:** Logged-in members can search and filter the catalog.
 * **Librarian/Admin View:** Authorized librarians have an unlocked "Librarian Dashboard" with full system management tools.
 
-![image_15.png](./screenshots/login_page.png) *(Standard Secure Login Screen)*
+<img src="./screenshots/login_page.png" width="700" alt="Login Page">
+<br>*(Standard Secure Login Screen)*
 
-![image_9.png](./screenshots/member_home_page.png) *(Logged Out / Member view: Browse and search, no 'Lend' button)*
+<img src="./screenshots/member_home_page.png" width="700" alt="Member Home Page">
+<br>*(Logged Out / Member view: Browse and search, no 'Lend' button)*
 
 ### 2. Librarian Dashboard (Admin Features)
 
 When authorized, the Librarian Dashboard unlocks specialized operations: processing book lending, updating inventory data, and reviewing all transactions.
 
-![image_11.png](./screenshots/admin_home_page.png) *(Admin View showing the critical 'Lend Book' button on available titles)*
+<img src="./screenshots/admin_home_page.png" width="700" alt="Admin Home Page">
+<br>*(Admin View showing the critical 'Lend Book' button on available titles)*
 
 #### dynamic Inventory Tracking & Data Management
 Librarians can easily add new books via a form, or update existing metadata. Availability is tracked in real-time, preventing lending when counts hit zero.
 
-![image_10.png](./screenshots/add_book_page.png) *(Form to inject new titles into the database)*
+<img src="./screenshots/add_book_page.png" width="700" alt="Add Book Page">
+<br>*(Form to inject new titles into the database)*
 
-![image_16.png](./screenshots/manage_book_page.png) *(Full Inventory management console for editing and deletion)*
+<img src="./screenshots/manage_book_page.png" width="700" alt="Manage Book Page">
+<br>*(Full Inventory management console for editing and deletion)*
 
-![image_13.png](./screenshots/edit_book_page.png) *(Form to update existing book details)*
+<img src="./screenshots/edit_book_page.png" width="700" alt="Edit Book Page">
+<br>*(Form to update existing book details)*
 
 ### 3. Automated Fine System & Borrow History
 
 This is the system's core business logic. The `BorrowHistory` module tracks who has what, when it's due, and automatically calculates penalties when books are returned past their due date. Late fines are automatically calculated in Rupees (Rs.) based on the date difference. For security, the "Return Date" is locked to the current system date.
 
-![image_12.png](./screenshots/borrow_history_page.png) *(Borrow History Table showing dynamic ' Fine' calculation for returned items and 'Borrowed' status for active loans)*
+<img src="./screenshots/borroe_history_page.png" width="700" alt="Borrow History Page">
+<br>*(Borrow History Table showing dynamic ' Fine' calculation for returned items and 'Borrowed' status for active loans)*
 
 ### 4. Advanced Search, Filtering, & Pagination
 
@@ -59,7 +69,8 @@ You implemented a seamless user experience on the frontend:
 * **Genre Filter:** Dropdown to quickly narrow down choices.
 * **Custom Pagination:** Efficiently displays results by slicing the database array (showing exactly 8 books per page).
 
-![image_14.png](./screenshots/home_page.png) *(Inventory view demonstrating custom pagination controls - page 2 view)*
+<img src="./screenshots/home_page.png" width="700" alt="Home Page">
+<br>*(Inventory view demonstrating custom pagination controls - page 2 view)*
 
 ---
 
