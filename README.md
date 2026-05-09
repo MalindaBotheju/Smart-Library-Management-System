@@ -1,5 +1,14 @@
 # 📚 Smart Library Management System
 
+<p align="center">
+  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white" alt="Express.js" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+  <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white" alt="Render" />
+</p>
+
 A full-stack, cloud-deployed Library Management System built with the MERN stack. This application digitizes library operations, featuring role-based access control (RBAC), real-time inventory tracking, and an automated borrowing/fining system. The backend is deployed on Render, communicating with a MongoDB Atlas database, and the frontend is deployed via Vercel with a complete CI/CD pipeline.
 
 **Live Demo:** [Click here to view the live application](https://smart-library-frontend-git-main-malindaboteju-5904s-projects.vercel.app/) *(Update with your actual Vercel link)*
