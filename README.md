@@ -32,30 +32,26 @@ Below is a detailed breakdown of the functionality you have successfully built, 
 The system is secured by Role-Based Access Control (RBAC).
 * **Unauthenticated Access:** Random visitors see a public catalog and are forced to a login screen if they attempt any restricted action (Protected Routes logic).
 <p align="center">
-  <img src="./screenshots/login_page.png" width="48%" alt="Admin Home Page">
-  <br>*(Admin View showing the critical 'Lend Book' button on available titles)*
-</p>
-* **Member View:** Logged-in members can search and filter the catalog.
-* **Librarian/Admin View:** Authorized librarians have an unlocked "Librarian Dashboard" with full system management tools.
-
-<p align="center">
   <img src="./screenshots/login_page.png" width="48%" alt="Login Page">
-  <img src="./screenshots/member_home_page.png" width="48%" alt="Member Home Page">
-  <br>*(Left: Standard Secure Login Screen | Right: Member view - browse and search, no 'Lend' button)*
+  <br>*(Standard Secure Login Screen)*
 </p>
 
-### 2. Librarian Dashboard (Admin Features)
+* **Member View:** Logged-in members can search and filter the catalog.
+<p align="center">
+  <img src="./screenshots/member_home_page.png" width="48%" alt="Member Home Page">
+  <br>*(Member view - browse and search, no 'Lend' button)*
+</p>
 
-When authorized, the Librarian Dashboard unlocks specialized operations: processing book lending, updating inventory data, and reviewing all transactions.
+* **Librarian/Admin View:** Authorized librarians have an unlocked "Librarian Dashboard" with full system management tools.
 
 <p align="center">
   <img src="./screenshots/admin_home_page.png" width="48%" alt="Admin Home Page">
   <br>*(Admin View showing the critical 'Lend Book' button on available titles)*
 </p>
 
-#### Dynamic Inventory Tracking & Data Management
-Librarians can easily add new books via a form, or update existing metadata. Availability is tracked in real-time, preventing lending when counts hit zero.
+### 2. Librarian Dashboard (Admin Features)
 
+When authorized, the Librarian Dashboard unlocks specialized operations: processing book lending, updating inventory data, and reviewing all transactions.
 <p align="center">
   <img src="./screenshots/add_book_page.png" width="48%" alt="Add Book Page">
   <img src="./screenshots/manage_book_page.png" width="48%" alt="Manage Book Page">
