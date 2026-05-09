@@ -11,11 +11,11 @@ A full-stack, cloud-deployed Library Management System built with the MERN stack
 
 The backend service is currently live and successfully communicating with the MongoDB cluster. The CI/CD pipelines are active for both frontend (Vercel) and backend (Render), ensuring automatic deployment of new commits.
 
-<img src="./screenshots/healthy_logs.png" width="700" alt="Healthy logs">
-<br>*(Healthy production server logs)*
-
-<img src="./screenshots/vercel_dashboard.png" width="700" alt="Vercel Dashboard">
-<br>*(Vercel success status)*
+<p align="center">
+  <img src="./screenshots/healthy_logs.png" width="48%" alt="Healthy logs">
+  <img src="./screenshots/vercel_dashboard.png" width="48%" alt="Vercel Dashboard">
+  <br>*(Left: Healthy production server logs | Right: Vercel success status)*
+</p>
 
 ---
 
@@ -30,37 +30,43 @@ The system is secured by Role-Based Access Control (RBAC).
 * **Member View:** Logged-in members can search and filter the catalog.
 * **Librarian/Admin View:** Authorized librarians have an unlocked "Librarian Dashboard" with full system management tools.
 
-<img src="./screenshots/login_page.png" width="700" alt="Login Page">
-<br>*(Standard Secure Login Screen)*
-
-<img src="./screenshots/member_home_page.png" width="700" alt="Member Home Page">
-<br>*(Logged Out / Member view: Browse and search, no 'Lend' button)*
+<p align="center">
+  <img src="./screenshots/login_page.png" width="48%" alt="Login Page">
+  <img src="./screenshots/member_home_page.png" width="48%" alt="Member Home Page">
+  <br>*(Left: Standard Secure Login Screen | Right: Member view - browse and search, no 'Lend' button)*
+</p>
 
 ### 2. Librarian Dashboard (Admin Features)
 
 When authorized, the Librarian Dashboard unlocks specialized operations: processing book lending, updating inventory data, and reviewing all transactions.
 
-<img src="./screenshots/admin_home_page.png" width="700" alt="Admin Home Page">
-<br>*(Admin View showing the critical 'Lend Book' button on available titles)*
+<p align="center">
+  <img src="./screenshots/admin_home_page.png" width="48%" alt="Admin Home Page">
+  <br>*(Admin View showing the critical 'Lend Book' button on available titles)*
+</p>
 
-#### dynamic Inventory Tracking & Data Management
+#### Dynamic Inventory Tracking & Data Management
 Librarians can easily add new books via a form, or update existing metadata. Availability is tracked in real-time, preventing lending when counts hit zero.
 
-<img src="./screenshots/add_book_page.png" width="700" alt="Add Book Page">
-<br>*(Form to inject new titles into the database)*
+<p align="center">
+  <img src="./screenshots/add_book_page.png" width="48%" alt="Add Book Page">
+  <img src="./screenshots/manage_book_page.png" width="48%" alt="Manage Book Page">
+  <br>*(Left: Form to inject new titles | Right: Full Inventory management console)*
+</p>
 
-<img src="./screenshots/manage_book_page.png" width="700" alt="Manage Book Page">
-<br>*(Full Inventory management console for editing and deletion)*
-
-<img src="./screenshots/edit_book_page.png" width="700" alt="Edit Book Page">
-<br>*(Form to update existing book details)*
+<p align="center">
+  <img src="./screenshots/edit_book_page.png" width="48%" alt="Edit Book Page">
+  <br>*(Form to update existing book details)*
+</p>
 
 ### 3. Automated Fine System & Borrow History
 
 This is the system's core business logic. The `BorrowHistory` module tracks who has what, when it's due, and automatically calculates penalties when books are returned past their due date. Late fines are automatically calculated in Rupees (Rs.) based on the date difference. For security, the "Return Date" is locked to the current system date.
 
-<img src="./screenshots/borroe_history_page.png" width="700" alt="Borrow History Page">
-<br>*(Borrow History Table showing dynamic ' Fine' calculation for returned items and 'Borrowed' status for active loans)*
+<p align="center">
+  <img src="./screenshots/borroe_history_page.png" width="48%" alt="Borrow History Page">
+  <br>*(Borrow History Table showing dynamic 'Fine' calculation for returned items and 'Borrowed' status for active loans)*
+</p>
 
 ### 4. Advanced Search, Filtering, & Pagination
 
@@ -69,8 +75,10 @@ You implemented a seamless user experience on the frontend:
 * **Genre Filter:** Dropdown to quickly narrow down choices.
 * **Custom Pagination:** Efficiently displays results by slicing the database array (showing exactly 8 books per page).
 
-<img src="./screenshots/home_page.png" width="700" alt="Home Page">
-<br>*(Inventory view demonstrating custom pagination controls - page 2 view)*
+<p align="center">
+  <img src="./screenshots/home_page.png" width="48%" alt="Home Page">
+  <br>*(Inventory view demonstrating custom pagination controls - page 2 view)*
+</p>
 
 ---
 
