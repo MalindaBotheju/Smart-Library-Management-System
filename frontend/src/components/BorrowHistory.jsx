@@ -11,7 +11,7 @@ function BorrowHistory() {
 
   const fetchHistory = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/transactions');
+      const response = await axios.get('https://smart-library-backend-72me.onrender.com/api/transactions');
       setTransactions(response.data);
     } catch (error) {
       console.error('Error fetching transactions:', error);
@@ -38,7 +38,7 @@ function BorrowHistory() {
   const handleReturnSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:5000/api/transactions/${selectedTransaction._id}/return`, {
+      await axios.put(`https://smart-library-backend-72me.onrender.com/api/transactions/${selectedTransaction._id}/return`, {
         actualReturnDate: actualReturnDate,
         status: 'Returned'
       });

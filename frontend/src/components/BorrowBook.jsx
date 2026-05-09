@@ -28,7 +28,7 @@ function BorrowBook() {
   useEffect(() => {
     const fetchBook = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/books/${id}`);
+        const response = await axios.get(`https://smart-library-backend-72me.onrender.com/api/books/${id}`);
         setBookTitle(response.data.title);
       } catch (error) {
         console.error('Error fetching book:', error);
@@ -41,7 +41,7 @@ function BorrowBook() {
     e.preventDefault();
     try {
       // 4. Send the calculated dates to the backend alongside the other info
-      await axios.post('http://localhost:5000/api/transactions', {
+      await axios.post('https://smart-library-backend-72me.onrender.com/api/transactions', {
         bookId: id,
         bookTitle: bookTitle,
         borrowerName: borrowerName,

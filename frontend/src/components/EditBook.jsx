@@ -19,7 +19,7 @@ function EditBook() {
   useEffect(() => {
     const fetchBookDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/books/${id}`);
+        const response = await axios.get(`https://smart-library-backend-72me.onrender.com/api/books/${id}`);
         const book = response.data;
         
         setTitle(book.title);
@@ -39,7 +39,7 @@ function EditBook() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:5000/api/books/${id}`, {
+      await axios.put(`https://smart-library-backend-72me.onrender.com/api/books/${id}`, {
         title,
         author,
         isbn: isbn || undefined,

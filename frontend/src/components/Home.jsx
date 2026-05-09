@@ -14,7 +14,7 @@ function Home({ user }) {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/books');
+        const response = await axios.get('https://smart-library-backend-72me.onrender.com/api/books');
         setBooks(response.data.length === 0 ? getDummyBooks() : response.data);
       } catch (error) {
         setBooks(getDummyBooks());

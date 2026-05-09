@@ -32,7 +32,7 @@ function Auth({ setUser }) {
       // For login, we send email/password. For register, we send all three.
       const payload = isLogin ? { email, password } : { username, email, password };
 
-      const response = await axios.post(`http://localhost:5000/api/auth/${endpoint}`, payload);
+      const response = await axios.post(`https://smart-library-backend-72me.onrender.com/api/auth/${endpoint}`, payload);
       
       localStorage.setItem('token', response.data.token);
       setUser(response.data.user);

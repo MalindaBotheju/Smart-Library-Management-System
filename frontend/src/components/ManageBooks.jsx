@@ -12,7 +12,7 @@ function ManageBooks() {
 
   const fetchBooks = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/books');
+      const response = await axios.get('https://smart-library-backend-72me.onrender.com/api/books');
       setBooks(response.data);
     } catch (error) {
       console.error('Error fetching books:', error);
@@ -30,7 +30,7 @@ function ManageBooks() {
 
     if (window.confirm(`Are you sure you want to delete "${book.title}"?`)) {
         try {
-        await axios.delete(`http://localhost:5000/api/books/${book._id}`);
+        await axios.delete(`https://smart-library-backend-72me.onrender.com/api/books/${book._id}`);
         setBooks(books.filter(b => b._id !== book._id));
         } catch (error) {
         // This catches the 400 error from the backend if someone tries to bypass the UI
