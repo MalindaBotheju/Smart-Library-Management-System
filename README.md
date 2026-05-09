@@ -109,16 +109,19 @@ If you wish to run this project locally, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/Smart-Library-Management-System.git](https://github.com/your-username/Smart-Library-Management-System.git)
+   git clone https://github.com/MalindaBotheju/Smart-Library-Management-System.git
+   ```
+   ```bash
    cd Smart-Library-Management-System
    ```
 
 2. **Setup the Backend:**
-```bash
-cd backend
-npm install
-
-```
+   ```bash
+   cd backend
+   ```
+   ```bash
+   npm install
+   ```
 
 
 * Create a `.env` file in the `backend` folder and add your variables (see `backend/server.js` for required variables):
