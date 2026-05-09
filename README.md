@@ -31,6 +31,10 @@ Below is a detailed breakdown of the functionality you have successfully built, 
 
 The system is secured by Role-Based Access Control (RBAC).
 * **Unauthenticated Access:** Random visitors see a public catalog and are forced to a login screen if they attempt any restricted action (Protected Routes logic).
+<p align="center">
+  <img src="./screenshots/login_page.png" width="48%" alt="Admin Home Page">
+  <br>*(Admin View showing the critical 'Lend Book' button on available titles)*
+</p>
 * **Member View:** Logged-in members can search and filter the catalog.
 * **Librarian/Admin View:** Authorized librarians have an unlocked "Librarian Dashboard" with full system management tools.
 
