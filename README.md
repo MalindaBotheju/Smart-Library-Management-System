@@ -1,18 +1,3 @@
-Okay, let's update that `README.md`. I have placed the most relevant screenshots under the description of each feature you've built. I've also added a small "DevOps Status" section showing the healthy service logs.
-
----
-
-***How to update your GitHub README:***
-
-1. Go to your repository on the GitHub website.
-2. Click on the `README.md` file in the file list.
-3. Click the **Pencil icon** (Edit this file).
-4. Delete the current contents and paste the markdown below.
-5. Click **Commit changes...** at the bottom of the screen.
-
----
-
-```markdown
 # 📚 Smart Library Management System
 
 ![Live Status](https://img.shields.io/badge/Status-Live-success)
@@ -44,28 +29,28 @@ The system is secured by Role-Based Access Control (RBAC).
 
 ![image_15.png](./screenshots/login_page.png) *(Standard Secure Login Screen)*
 
-![image_9.png](./screenshots/member_view.png) *(Logged Out / Member view: Browse and search, no 'Lend' button)*
+![image_9.png](./screenshots/member_home_page.png) *(Logged Out / Member view: Browse and search, no 'Lend' button)*
 
 ### 2. Librarian Dashboard (Admin Features)
 
 When authorized, the Librarian Dashboard unlocks specialized operations: processing book lending, updating inventory data, and reviewing all transactions.
 
-![image_11.png](./screenshots/librarian_dashboard.png) *(Admin View showing the critical 'Lend Book' button on available titles)*
+![image_11.png](./screenshots/admin_home_page.png) *(Admin View showing the critical 'Lend Book' button on available titles)*
 
 #### dynamic Inventory Tracking & Data Management
 Librarians can easily add new books via a form, or update existing metadata. Availability is tracked in real-time, preventing lending when counts hit zero.
 
-![image_10.png](./screenshots/add_book.png) *(Form to inject new titles into the database)*
+![image_10.png](./screenshots/add_book_page.png) *(Form to inject new titles into the database)*
 
-![image_16.png](./screenshots/manage_books.png) *(Full Inventory management console for editing and deletion)*
+![image_16.png](./screenshots/manage_book_page.png) *(Full Inventory management console for editing and deletion)*
 
-![image_13.png](./screenshots/edit_book.png) *(Form to update existing book details)*
+![image_13.png](./screenshots/edit_book_page.png) *(Form to update existing book details)*
 
 ### 3. Automated Fine System & Borrow History
 
 This is the system's core business logic. The `BorrowHistory` module tracks who has what, when it's due, and automatically calculates penalties when books are returned past their due date. Late fines are automatically calculated in Rupees (Rs.) based on the date difference. For security, the "Return Date" is locked to the current system date.
 
-![image_12.png](./screenshots/fining_system.png) *(Borrow History Table showing dynamic ' Fine' calculation for returned items and 'Borrowed' status for active loans)*
+![image_12.png](./screenshots/borrow_history_page.png) *(Borrow History Table showing dynamic ' Fine' calculation for returned items and 'Borrowed' status for active loans)*
 
 ### 4. Advanced Search, Filtering, & Pagination
 
@@ -74,7 +59,7 @@ You implemented a seamless user experience on the frontend:
 * **Genre Filter:** Dropdown to quickly narrow down choices.
 * **Custom Pagination:** Efficiently displays results by slicing the database array (showing exactly 8 books per page).
 
-![image_14.png](./screenshots/pagination.png) *(Inventory view demonstrating custom pagination controls - page 2 view)*
+![image_14.png](./screenshots/home_page.png) *(Inventory view demonstrating custom pagination controls - page 2 view)*
 
 ---
 
