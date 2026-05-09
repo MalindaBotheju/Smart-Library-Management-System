@@ -1,11 +1,8 @@
 # 📚 Smart Library Management System
 
-![Live Status](https://img.shields.io/badge/Status-Live-success)
-![Version](https://img.shields.io/badge/Version-1.0-blue)
-
 A full-stack, cloud-deployed Library Management System built with the MERN stack. This application digitizes library operations, featuring role-based access control (RBAC), real-time inventory tracking, and an automated borrowing/fining system. The backend is deployed on Render, communicating with a MongoDB Atlas database, and the frontend is deployed via Vercel with a complete CI/CD pipeline.
 
-**Live Demo:** [Click here to view the live application](https://smart-library-frontend-eta.vercel.app) *(Update with your actual Vercel link)*
+**Live Demo:** [Click here to view the live application](https://smart-library-frontend-git-main-malindaboteju-5904s-projects.vercel.app/) *(Update with your actual Vercel link)*
 
 ## ☁️ DevOps Status
 
