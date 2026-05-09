@@ -11,12 +11,6 @@ A full-stack, cloud-deployed Library Management System built with the MERN stack
 
 The backend service is currently live and successfully communicating with the MongoDB cluster. The CI/CD pipelines are active for both frontend (Vercel) and backend (Render), ensuring automatic deployment of new commits.
 
-<p align="center">
-  <img src="./screenshots/healthy_logs.png" width="48%" alt="Healthy logs">
-  <img src="./screenshots/vercel_dashboard.png" width="48%" alt="Vercel Dashboard">
-  <br>*(Left: Healthy production server logs | Right: Vercel success status)*
-</p>
-
 ---
 
 ## ✨ Key Features & Application View
