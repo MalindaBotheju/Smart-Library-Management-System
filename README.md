@@ -137,7 +137,7 @@ If you wish to run this project locally, follow these steps:
    npm install
    ```
    * Start the Vite development server: `npm run dev`
-   * * *Note: Ensure your frontend API calls are pointing to `http://localhost:5000` for local testing.*
+   * Note: Ensure your frontend API calls are pointing to `http://localhost:5000` for local testing.*
 ---
 
 ## 🧠 Database Architecture
@@ -147,5 +147,3 @@ The application uses three core interconnected Mongoose models/collections:
 * **Users Model:** Stores login credentials, secured hashed passwords, and user role (`admin` or `member`).
 * **Books Model:** Stores metadata (Title, Author, Genre, ISBN) and manages the crucial dynamic `availableCopies` count.
 * **Transactions Model:** Acts as the main transactional database, linking borrowers to specific books and recording issue dates, due dates, return dates, and late fine amounts.
-
-```
