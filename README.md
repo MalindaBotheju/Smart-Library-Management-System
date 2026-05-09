@@ -12,7 +12,7 @@
 A full-stack, cloud-deployed Library Management System built with the MERN stack. This application digitizes library operations, featuring role-based access control (RBAC), real-time inventory tracking, and an automated borrowing/fining system. The backend is deployed on Render, communicating with a MongoDB Atlas database, and the frontend is deployed via Vercel with a complete CI/CD pipeline.
 
 <p align="center">
-  <a href="https://smart-library-frontend-4ks17icn0-malindaboteju-5904s-projects.vercel.app/" target="_blank">
+  <a href="https://smart-library-frontend-git-main-malindaboteju-5904s-projects.vercel.app/login" target="_blank">
     <img src="https://img.shields.io/badge/🚀_View_Live_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo Button" />
   </a>
 </p>
