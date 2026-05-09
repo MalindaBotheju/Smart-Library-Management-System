@@ -111,8 +111,7 @@ If you wish to run this project locally, follow these steps:
    ```bash
    git clone [https://github.com/your-username/Smart-Library-Management-System.git](https://github.com/your-username/Smart-Library-Management-System.git)
    cd Smart-Library-Management-System
-
-```
+   ```
 
 2. **Setup the Backend:**
 ```bash
