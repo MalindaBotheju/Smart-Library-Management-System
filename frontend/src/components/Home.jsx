@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom'; // Added useNavigate
 
 function Home({ user }) {
   const [books, setBooks] = useState([]);
@@ -11,6 +11,17 @@ function Home({ user }) {
   const [currentPage, setCurrentPage] = useState(1);
   const booksPerPage = 8; 
 
+  const navigate = useNavigate(); // Initialize navigate
+
+  // --- SECURITY LOGIC: Redirect if not logged in ---
+  useEffect(() => {
+    const token = localStorage.getItem('token'); 
+    if (!token) {
+      navigate('/login');
+    }
+  }, [navigate]);
+
+  // --- FETCH BOOKS LOGIC ---
   useEffect(() => {
     const fetchBooks = async () => {
       try {
